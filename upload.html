@@ -3,55 +3,16 @@
 
 <head>
     <title>
-        Using Multiple File Upload
+      Josh Wallis upload page
     </title>
 </head>
 
 <body>
-  <label for="fileInput">Choose image files to see preview</label>
-<input type="file" id="fileInput" accept="image/*" multiple>
-<div id="preview"></div>
-
-<script>
-	document.getElementById('fileInput').addEventListener('change', function(event) {
-    var files = event.target.files;
-    var preview = document.getElementById('preview');
-    
-    // Clear any existing content
-    preview.innerHTML = '';
-
-    // Loop through all selected files
-    for (var i = 0; i < files.length; i++) {
-      var file = files[i];
-
-      // Only process image files
-      if (!file.type.match('image.*')) {
-        continue;
-      }
-
-      var imgContainer = document.createElement('div');
-      imgContainer.style.marginBottom = '20px'; // Spacing between each image container
-
-      var img = document.createElement('img');
-      img.src = URL.createObjectURL(file);
-      img.style.height = '100px';
-      img.style.display = 'block'; // Ensure the image is displayed in a block to put it on a new line
-      img.style.marginBottom = '10px';
-
-      var fileInfo = document.createElement('p');
-      fileInfo.textContent = `File Name: ${file.name}, Type: ${file.type}, Size: ${file.size} bytes`;
-      fileInfo.style.fontSize = '14px';
-      fileInfo.style.marginTop = '0';
-
-      // Append the image and file info to the container
-      imgContainer.appendChild(img);
-      imgContainer.appendChild(fileInfo);
-
-      // Append the container to the preview div
-      preview.appendChild(imgContainer);
-    }
-  });
-</script>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24LZOMAbTvbz6dEOaZXDsGB1"+"&opts=16798&num=10&ts=1733105003591");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
 </body>
 
 </html>
